@@ -58,6 +58,7 @@ export default Projects
 const ProjectMain = styled.div`
 padding: 2rem;
 margin: 2rem 8rem 0 ;
+margin-bottom: 75px;
 h1{
   color:white;
   font-size:2.5rem;
