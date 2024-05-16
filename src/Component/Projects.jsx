@@ -6,7 +6,7 @@ import highrangevalley from './Assets/highrangevalley.png'
 import music from './Assets/musicplayer (1).png'
 import youtube from './Assets/youtube-clone (1).jpg'
 import netflix from './Assets/netflix (1).jpg'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 function Projects() {
@@ -15,32 +15,38 @@ function Projects() {
     {
       id: 1,
       image: illa,
-      description: "Illa Spices is a static website built using HTML,CSS, and JavaScript",
+      description: "Illa Spices is a static website built using HTML,CSS, and JavaScript with responsive design",
+      source:"https://gitlab.com/krishnapriyasanthosh1999/illa-spices.git"
     },
     {
       id: 2,
       image: great,
-      description: "Illa Spices is a static website built using HTML,CSS, and JavaScript",
+      description: "The Great Explore  is a static website built using HTML,CSS, and JavaScript with responsive design",
+      source:"https://gitlab.com/krishnapriyasanthosh1999/great-explore.git"
     },
     {
       id: 3,
       image: highrangevalley,
-      description: "Illa Spices is a static website built using HTML,CSS, and JavaScript",
+      description: "The Highrage Valley is a static website built using HTML,CSS, and JavaScript with responsive design",
+      source:"https://gitlab.com/krishnapriyasanthosh1999/high-range-valley.git"
     },
     {
       id: 3,
       image: music,
-      description: "Illa Spices is a static website built using HTML,CSS, and JavaScript",
+      description: "Music Player is a dynamic website built using react js,tailwind css with responsive design",
+      source:"https://gitlab.com/krishnapriyasanthosh1999/music-player.git"
     },
     {
       id: 4,
       image: youtube,
-      description: "Illa Spices is a static website built using HTML,CSS, and JavaScript",
+      description: "Youtube  is a dynamic website built using react js ,tailwind css with responsive design",
+      source:"https://gitlab.com/krishnapriyasanthosh1999/youtube-clone.git"
     },
     {
       id: 5,
       image: netflix,
-      description: "Illa Spices is a static website built using HTML,CSS, and JavaScript",
+      description: " Netflix is a dynamic website built using react js ,tailwind css with responsive design",
+      source:""
     },
   ]
   return (
@@ -55,7 +61,8 @@ function Projects() {
               <List>
                 <Imagess><img src={project?.image} alt='illa spices images' /></Imagess>
                 <p>{project?.description}</p>
-                {/* <NavLink className='link' to={`/projects/${project?.id}`}>Learn More</NavLink> */}
+                <Link className='link' to={project?.source}>Source Code</Link>
+                {/* <link>{project?.source}</link> */}
               </List>
             ))
           }
