@@ -27,6 +27,9 @@ const FooterContainer = styled.footer`
   color: #fff;
   padding: 2rem 0;
   border-top: 1px solid #f59e0b;
+  // @media(max-width:640px){
+  //   display:none;
+  // }
 }
 
 
@@ -38,16 +41,22 @@ const FooterContent = styled.div`
   align-items: center;
   padding:  0 2rem;
 margin: 0 8rem 0;
+flex-wrap:wrap;
+@media(max-width:1024px){
+  margin:0;
+}
 `;
 
 const FooterLogo = styled.h2`
   font-size: 1.5rem;
   color:#f59e0b;
   font-weight"600;
+  white-space:nowrap;
 `;
 
 const FooterLinks = styled.nav`
   display: flex;
+  flex-wrap:wrap;
   gap: 20px;
 `;
 
