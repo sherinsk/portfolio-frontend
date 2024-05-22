@@ -87,8 +87,9 @@ const NavList = styled.ul`
     display: block;
     position: absolute;
     top: 122px;
-    width: 94%;
-    margin-left: -55px;
+    width: 100%;
+    left:0;
+    right:0;
     padding: 0 4rem 2rem
     
   }
