@@ -16,31 +16,31 @@ function Projects() {
       id: 1,
       image: illa,
       description: "Illa Spices is a static website built using HTML,CSS, and JavaScript with responsive design",
-      source:"https://gitlab.com/krishnapriyasanthosh1999/illa-spices.git"
+      source:"https://gitlab.com/krishnapriyasanthosh1999/illa-spices"
     },
     {
       id: 2,
       image: great,
       description: "The Great Explore  is a static website built using HTML,CSS, and JavaScript with responsive design",
-      source:"https://gitlab.com/krishnapriyasanthosh1999/great-explore.git"
+      source:"https://gitlab.com/krishnapriyasanthosh1999/great-explore"
     },
     {
       id: 3,
       image: highrangevalley,
       description: "The Highrage Valley is a static website built using HTML,CSS, and JavaScript with responsive design",
-      source:"https://gitlab.com/krishnapriyasanthosh1999/high-range-valley.git"
+      source:"https://gitlab.com/krishnapriyasanthosh1999/high-range-valley"
     },
     {
       id: 3,
       image: music,
       description: "Music Player is a dynamic website built using react js,tailwind css with responsive design",
-      source:"https://gitlab.com/krishnapriyasanthosh1999/music-player.git"
+      source:"https://gitlab.com/krishnapriyasanthosh1999/music-player"
     },
     {
       id: 4,
       image: youtube,
       description: "Youtube  is a dynamic website built using react js ,tailwind css with responsive design",
-      source:"https://gitlab.com/krishnapriyasanthosh1999/youtube-clone.git"
+      source:"https://gitlab.com/krishnapriyasanthosh1999/youtube-clone"
     },
     {
       id: 5,
