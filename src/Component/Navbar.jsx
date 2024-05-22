@@ -4,6 +4,8 @@ import { HiMenu } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
 import { useState } from 'react';
 
+
+
 function Navbar() {
   const [menu, setMenu] = useState(false);
 
@@ -16,16 +18,16 @@ function Navbar() {
       <Title>Portfolio</Title>
       <NavList className={menu ? 'menulist' : ''}>
         <NavItem>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/" >Home</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/about" >About</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="/projects">Projects</NavLink>
+          <NavLink to="/projects" >Projects</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/contact" >Contact</NavLink>
         </NavItem>
       </NavList>
       <div className='menubar' onClick={handleClick}>
@@ -77,6 +79,8 @@ const NavList = styled.ul`
   display: flex;
   gap: 1.5rem;
   font-size: 1.125rem;
+  // scroll-behavior: smooth;
+ 
 
   &.menulist {
     background-color: black;
@@ -99,12 +103,13 @@ const NavItem = styled.li`
   border-bottom: 1px solid transparent;
   transition: color 0.3s, border-color 0.3s;
   padding: 10px 0;
+  // scroll-behavior: smooth;
 
   & .active {
     color: #f59e0b;
   }
-
   &:hover {
     color: #f59e0b;
   }
 `;
+; 

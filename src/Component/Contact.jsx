@@ -42,7 +42,7 @@ function Contact() {
                 <ContactSection>
                     <ContactLeft>
                         <h5>Let's <span style={{ color: "white" }}>talk</span></h5>
-                        <p>Communication is one of the most important skills you require for a successful life, and communication is your ticket to success if you pay attention and learn to do it effectively.</p>
+                        <p>Thank you for visiting my portfolio! I would love to hear from you, whether you have a project you want to discuss, feedback on my work, or just want to say hello. Here’s how you can reach me</p>
                         <ContactList className='mail'>
                             <MdEmail className='icons' />
                             <h6>krishnpriyasanthosh2005@gmail.com</h6>

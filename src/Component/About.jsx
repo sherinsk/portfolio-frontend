@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import image from './Assets/pro.jpeg'
+// 
 import pro from './Assets/WhatsApp Image 2024-04-18 at 1.57.13 PM (1).jpeg'
 
 function About() {
@@ -116,18 +116,18 @@ const Paragraph = styled.div``;
 const Para = styled.div`
   color:white;
   color: white;
-  font-size: 1.125rem;
+  // font-size: 1.125rem;
   margin-bottom:18px;
   text-align:justify;
-  @media(max-width:1024px){
-    font-size: 1.4rem;
-  }
-   @media(max-width:768px){
-    font-size:1.5rem;
-   }
-   @media(max-width:640px){
-    font-size:1.2rem;
-   }
+  // @media(max-width:1024px){
+  //   font-size: none;
+  // }
+  //  @media(max-width:768px){
+  //   font-size:1.5rem;
+  //  }
+  //  @media(max-width:640px){
+  //   font-size:1.2rem;
+  //  }
 `;
 const Scentace = styled.div`
 margin-bottom:70px;
