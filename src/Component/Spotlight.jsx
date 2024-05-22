@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import image from './Assets/WhatsApp Image 2024-04-18 at 1.57.13 PM (1).jpeg';
+import profile from './Assets/WhatsApp Image 2024-04-18 at 1.57.13 PM (1).jpeg';
 import { Link } from 'react-router-dom';
 
 function Spotlight() {
@@ -23,7 +23,7 @@ function Spotlight() {
                     </Buttans>
                 </HomeContainer>
                 <AnimatedImage>
-                    <img src={image} alt="profile image" />
+                    <img src={profile} alt="profile image" />
                 </AnimatedImage>
             </HomeMain>
         </>
