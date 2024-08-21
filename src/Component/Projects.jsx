@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Spinning from '../loading/Spinner';
+// import Spinning from '../loading/Spinner';
 
 function Projects() {
   const [projects, setProjects] = useState(null);
@@ -29,7 +29,7 @@ function Projects() {
         <h1>Projects</h1>
         {loading ? (
           <LoadingContainer>
-            <Spinning/>
+            <p className='text-white'>Loading.....</p>
           </LoadingContainer>
         ) : (
           <Project>
