@@ -1,20 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { Spinner } from "@material-tailwind/react";
 
 function Projects() {
   const [projects, setProjects] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulating fetching data from an API or local JSON file
     const fetchProjects = async () => {
-      // Example: Fetching from an API
-      const response = await fetch('https://portfolio-backend-ebon-five.vercel.app/projects');
-      const data = await response.json();
-
-      
-
-      setProjects(data);
+      try {
+        const response = await fetch('https://portfolio-backend-ebon-five.vercel.app/projects');
+        const data = await response.json();
+        setProjects(data);
+      } catch (error) {
+        console.error('Error fetching projects:', error);
+      } finally {
+        setLoading(false);
+      }
     };
 
     fetchProjects();
@@ -24,21 +27,27 @@ function Projects() {
     <div>
       <ProjectMain>
         <h1>Projects</h1>
-        <Project>
-          {projects?.map((project) => (
-            <List key={project.id}>
-              <Imagess>
-                <img src={project.image} alt="project images" />
-              </Imagess>
-              <p>{project.description}</p>
-              {
-                project.source?<Link className="link" to={project.source}>
-                Source Code
-              </Link>:""
-              }
-            </List>
-          ))}
-        </Project>
+        {loading ? (
+          <LoadingContainer>
+            <Spinner className="h-16 w-16 text-[#f59e0b]" />
+          </LoadingContainer>
+        ) : (
+          <Project>
+            {projects.map((project) => (
+              <List key={project.id}>
+                <Imagess>
+                  <img src={project.image} alt="project images" />
+                </Imagess>
+                <p className='p-[20px]'>{project.description}</p>
+                {project.source ? (
+                  <Link className="link" to={project.source}>
+                    Source Code
+                  </Link>
+                ) : null}
+              </List>
+            ))}
+          </Project>
+        )}
       </ProjectMain>
     </div>
   );
@@ -92,8 +101,7 @@ const List = styled.div`
   align-items: center;
   gap: 10px;
   color: white;
-  padding: 1.5rem;
-  border-radius: 4rem;
+  border-radius: 1rem;
   transition: ease-in-out 0.3s;
   box-shadow: 0 0 20px #f59e0b;
 
@@ -108,11 +116,27 @@ const List = styled.div`
 `;
 
 const Imagess = styled.div`
-  max-width: 100%;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem 1rem 0rem 0rem;
 
   img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
-    border-radius: 0.5rem;
   }
+`;
+
+const LoadingContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Adjust the height to center the spinner vertically */
 `;

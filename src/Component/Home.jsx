@@ -14,8 +14,7 @@ function Home() {
     <About/>
     <Projects/>
     <Contact/>
-   
-    
+ 
     </>
   );
 }
