@@ -19,7 +19,7 @@ function Spotlight() {
                     </Paragraph>
                     <Buttans>
                         <Link className='link' to ='/contact'>Contact Me</Link>
-                        <Link className='link' to='/krishnapriyA05.pdf' download target='_blank'>Download CV</Link>
+                        <Link className='link' to='/Sherin-resume.pdf' download target='_blank'>Download CV</Link>
                     </Buttans>
                 </HomeContainer>
                 <AnimatedImage>
