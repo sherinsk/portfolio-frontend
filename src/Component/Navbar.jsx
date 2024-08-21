@@ -16,7 +16,7 @@ function Navbar() {
   };
 
   return (
-    <NavbarContainer>
+    <NavbarContainer className='m-0 p-0'>
       <Title>Portfolio</Title>
       <NavList className={menu ? 'menulist' : ''} >
         <NavItem>
@@ -30,6 +30,9 @@ function Navbar() {
         </NavItem>
         <NavItem>
           <StyledNavLink to="/contact" onClick={handleNavLinkClick}>Contact</StyledNavLink>
+        </NavItem>
+        <NavItem>
+          <StyledNavLink to="/admin" onClick={handleNavLinkClick}>Admin</StyledNavLink>
         </NavItem>
       </NavList>
       <div className='menubar' onClick={handleClick}>
@@ -45,14 +48,14 @@ const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 2rem;
-  margin: 0 8rem 2rem 8rem;
+  margin: 0 8rem 0rem 8rem;
   font-family: sans-serif;
 
   @media(max-width:1024px){
     margin:0 4rem 2rem;
   }
   @media(max-width:640px){
-    margin:0 2rem 2rem;
+    margin:0 2rem 0;
   }
   @media(max-width:460px){
     padding: 2rem 0;
@@ -90,7 +93,7 @@ const NavList = styled.ul`
     background-color: black;
     display: block;
     position: absolute;
-    top: 122px;
+    top: 109px;
     width: 100%;
     left:0;
     right:0;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import profile from './Assets/WhatsApp Image 2024-04-18 at 1.57.13 PM (1).jpeg';
+import profile from './Assets/sherin.png';
 import { Link } from 'react-router-dom';
 
 function Spotlight() {
@@ -10,12 +10,12 @@ function Spotlight() {
                 <HomeContainer>
                     <Title>Hello,</Title>
                     <MainTitle>
-                        <h1>I'm <span className="highlight">Krishnapriya</span></h1>
+                        <h1>I'm <span className="highlight">Sherin SK</span></h1>
                     </MainTitle>
-                    <SubTitle>FrontEnd Developer</SubTitle>
+                    <SubTitle>Backend Developer</SubTitle>
                     <Paragraph>
-                        Passionate Frontend Developer with a knack for creating intuitive  and
-                        high-performing web applications.
+                    Skilled in Node.js, Express, and Prisma.
+                    I build efficient APIs, manage databases, and develop real-time features like chat systems. My work focuses on creating secure, scalable, and high-performance backend solutions.
                     </Paragraph>
                     <Buttans>
                         <Link className='link' to ='/contact'>Contact Me</Link>

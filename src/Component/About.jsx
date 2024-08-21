@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 // 
-import pro from './Assets/WhatsApp Image 2024-04-18 at 1.57.13 PM (1).jpeg'
+import pro from './Assets/sherin.png'
 
 function About() {
     return (
