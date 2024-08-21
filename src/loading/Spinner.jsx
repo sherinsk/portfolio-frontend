@@ -1,12 +1,11 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
+import Spinner from 'react-bootstrap/Spinner';
 
-const Spinner = () => {
+export default function Spinning() {
   return (
-    <div
-      className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-white border-e-transparent"
-      role="status"
-    />
+    <div style={{ display: 'block', width: 1000, padding: 30 }} className='mx-auto'> 
+      <Spinner animation="border" variant="primary" /> <br/>
+    </div>
   );
-};
-
-export default Spinner;
+}
