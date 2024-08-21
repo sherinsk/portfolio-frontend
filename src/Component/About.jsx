@@ -14,14 +14,15 @@ function About() {
                     </Image>
                     <Paragraph>
                         <Scentace>
-                            <Para>I am an experienced Frontend Developer with over a decade of professional expertise in the field.
-                                Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their
-                                success and growth.
-
+                            <Para>As a Backend Developer with one year of professional experience, 
+                              I specialize in Node.js and Prisma, demonstrating strong expertise in designing and optimizing scalable backend systems. 
+                              My hands-on experience includes integrating complex APIs, managing databases, and ensuring robust application performance. 
+                              Adept at problem-solving and passionate about delivering high-quality solutions, 
+                              I bring a focused approach to backend technology challenges.
                             </Para>
                             <Para>
-                                My passion for frontend development is not only reflected in my extensive experience but also in the
-                                enthusiasm and dedication I bring to each project
+                            I also have foundational knowledge in frontend development, 
+                            which enhances my ability to build full-stack solutions.
                             </Para>
                         </Scentace>
 
