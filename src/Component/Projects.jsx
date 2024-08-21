@@ -29,7 +29,11 @@ function Projects() {
         <h1>Projects</h1>
         {loading ? (
           <LoadingContainer>
-            <p className='text-white'>Loading.....</p>
+            (
+              <div className="flex items-center justify-center h-screen">
+                <p className="text-white text-lg">Loading<span className="animate-pulse">...</span></p>
+              </div>  
+            )
           </LoadingContainer>
         ) : (
           <Project>
