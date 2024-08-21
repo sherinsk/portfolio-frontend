@@ -17,7 +17,7 @@ function Contact() {
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
 
-        const res = await fetch("https://api.web3forms.com/submit", {
+        const res = await fetch("", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -45,15 +45,15 @@ function Contact() {
                         <p>Thank you for visiting my portfolio! I would love to hear from you, whether you have a project you want to discuss, feedback on my work, or just want to say hello. Here’s how you can reach me</p>
                         <ContactList className='mail'>
                             <MdEmail className='icons' />
-                            <h6>krishnpriyasanthosh2005@gmail.com</h6>
+                            <h6>sherinsk.backenddev@gmail.com</h6>
                         </ContactList>
                         <ContactList>
                             <IoCall className='icons' />
-                            <h6>+ 78433 1233 679</h6>
+                            <h6>+91 7025032864</h6>
                         </ContactList>
                         <ContactList>
                             <FaLocationDot className='icons' />
-                            <h6>Edappally, Kochi</h6>
+                            <h6>Varkala, Thiruvananthapuram</h6>
                         </ContactList>
                     </ContactLeft>
                     <ContactRight>
