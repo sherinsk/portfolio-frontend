@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import toast, { Toaster } from 'react-hot-toast';
+import { Import } from 'lucide-react';
 
 function Contact() {
+
+    const [loading,setLoading]=useState(null)
     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
@@ -15,6 +18,7 @@ function Contact() {
         const json = JSON.stringify(object);
 
         try {
+          setLoading(true)
             const res = await fetch("https://portfolio-backend-ebon-five.vercel.app/sendemail", {
                 method: "POST",
                 headers: {
@@ -28,18 +32,18 @@ function Contact() {
 
             if (res.ok) {
                 console.log("Success", result);
-                notify()
+                toast.success('Message sent to Sherin S')
             } else {
                 console.error("Error:", result.message);
                 alert("Error: " + result.message);
             }
+            setLoading(false)
         } catch (error) {
             console.error("Error:", error);
-            alert("An error occurred while sending the message.");
+            toast.error("An error occurred while sending the message.")
         }
     };
 
-    const notify = () => toast.success('Message sent to Sherin S');
 
     return (
         <>
@@ -71,7 +75,7 @@ function Contact() {
                             <input name='email' type='email' placeholder='Enter your email' required /><br />
                             <label className='label'>Write Your message here</label><br />
                             <textarea name='message' rows="8" placeholder='Enter your message' required></textarea>
-                            <Button type="submit">Submit</Button>
+                            <Button type="submit">{loading?"Loading....":"Submit"}</Button>
                         </form>
                     </ContactRight>
                 </ContactSection>

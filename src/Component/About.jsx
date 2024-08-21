@@ -27,16 +27,16 @@ function About() {
 
                         <SkillSets>
                             <Skill >
-                                <h6>HTML</h6>
+                                <h6>Javascript</h6>
 
                                 <div className='html'></div>
                             </Skill>
                             <Skill >
-                                <h6>CSS</h6>
+                                <h6>Node.JS</h6>
                                 <div className='css'></div>
                             </Skill>
                             <Skill >
-                                <h6>TailwindCSS</h6>
+                                <h6>MongoDB</h6>
                                 <div className='tailwind'></div>
                             </Skill>
                             <Skill >
@@ -151,25 +151,25 @@ const Skill = styled.div`
 
   .html{
     background:#f59e0b;
-    width:83%;
+    width:90%;
     height: 8px;
     border-radius: 2rem;
   }
   .css{
     background:#f59e0b;
-    width:40%;
+    width:90%;
     height: 8px;
     border-radius: 2rem;
   }
   .tailwind{
     background:#f59e0b;
-    width:20%;
+    width:70%;
     height: 8px;
     border-radius: 2rem;
   }
   .react{
     background:#f59e0b;
-    width:60%;
+    width:40%;
     height: 8px;
     border-radius: 2rem;
   }
