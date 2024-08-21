@@ -5,6 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import toast, { Toaster } from 'react-hot-toast';
 import { Import } from 'lucide-react';
+import { Spinner } from "@material-tailwind/react";
 
 function Contact() {
 
@@ -75,7 +76,7 @@ function Contact() {
                             <input name='email' type='email' placeholder='Enter your email' required /><br />
                             <label className='label'>Write Your message here</label><br />
                             <textarea name='message' rows="8" placeholder='Enter your message' required></textarea>
-                            <Button type="submit">{loading?"Loading....":"Submit"}</Button>
+                            <Button type="submit">{loading?<Spinner className="mx-auto" />:"Submit"}</Button>
                         </form>
                     </ContactRight>
                 </ContactSection>

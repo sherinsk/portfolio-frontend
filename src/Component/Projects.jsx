@@ -29,7 +29,7 @@ function Projects() {
         <h1>Projects</h1>
         {loading ? (
           <LoadingContainer>
-            <Spinner className="h-16 w-16 text-[#f59e0b]" />
+            <Spinner color="white" className="h-12 w-12" />
           </LoadingContainer>
         ) : (
           <Project>
@@ -58,7 +58,7 @@ export default Projects;
 const ProjectMain = styled.div`
   padding: 2rem;
   margin: 2rem 8rem 0;
-  padding-bottom: 0;
+  padding-bottom: 10rem;
 
   h1 {
     color: white;
