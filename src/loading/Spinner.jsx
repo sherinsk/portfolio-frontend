@@ -4,8 +4,16 @@ import Spinner from 'react-bootstrap/Spinner';
 
 export default function Spinning() {
   return (
-    <div style={{ display: 'block', width: 1000, padding: 30 }} className='mx-auto'> 
-      <Spinner animation="border" variant="primary" /> <br/>
-    </div>
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '70vh', // Full viewport height
+      width: '100%', // Full width of the container
+      padding: 30,
+      margin: "auto"
+    }}> 
+      <Spinner animation="border" variant="primary" /> 
+    </div>    
   );
 }
