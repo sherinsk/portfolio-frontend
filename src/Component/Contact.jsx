@@ -71,7 +71,7 @@ function Contact() {
                     <ContactRight>
                         <form onSubmit={onSubmit}>
                             <label className='label'>Name</label><br />
-                            <input name='userName' type='text' placeholder='Enter your name' required /><br />
+                            <input name='name' type='text' placeholder='Enter your name' required /><br />
                             <label className='label'>Email</label><br />
                             <input name='email' type='email' placeholder='Enter your email' required /><br />
                             <label className='label'>Write Your message here</label><br />
